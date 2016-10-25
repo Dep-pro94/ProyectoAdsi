@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">VirtualKey1</string>
+    <string name="name">Nombre</string>
+    <string name="lastname">Apellido</string>
+    <string name="document">Documento</string>
+    <string name="email">Correo</string>
+    <string name="creat_your_password"> Crea tu contraseña</string>
+    <string name="confirm_your_password">Confirma tu contraseña</string>
+    <string name="enter_their_names">ingrese sus nombres</string>
+    <string name="enter_your_surname">ingrese sus apellidos</string>
+    <string name="enter_number_of_your_document">ingrese numero de su documento</string>
+    <string name="enter_your_email">ingresa tu correo</string>
+    <string name="enter_password">ingrese su contraseña</string>
+    <string name="confirm_password">Confirme su contraseña</string>
+    <string name="get_in">  ingresar  </string>
+    <string name="Forgot_password"> ¿ Olvidaste tu contraseña ?</string>
+    <string name="signin"> Login</string>
+    <string name="signup"> Registro</string>
+    <string name="Check_in"> Registrarse</string>
+    <string name="correo"> Username:</string>
+    <string name="contraseña"> Password:</string>
+    <string name="Reset_your_password"> Restablecer su contraseña </string>
+    <string name="send"> enviar</string>
+
+
+
+</resources>
+
+
