@@ -16,7 +16,7 @@ class DoorsSerializers(serializers.HyperlinkedModelSerializer):
 		fields = ('code', 'name', 'state')
 
 class ResSerializer(serializers.Serializer):
-	codigo= serializers.IntegerField()
+	codigo= serializers.CharField(max_length=30)
 	mensaje = serializers.CharField(max_length=30)
 	cambios= serializers.CharField(max_length=30)
 

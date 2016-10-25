@@ -4,7 +4,7 @@ from virtualkeyapirest.models import  Doors
 from rest_framework import viewsets
 from virtualkeyapirest.serializers import UserSerializer, GroupSerializer, DoorsSerializers, ResSerializer
 from virtualkeyapirest.result import *
-import requests
+from rest_framework.response import Response
 
 class UserViewSet(viewsets.ModelViewSet):
 	queryset = User.objects.all().order_by('date_joined')

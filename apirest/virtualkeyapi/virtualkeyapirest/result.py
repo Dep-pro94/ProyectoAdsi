@@ -16,7 +16,7 @@ class  result(object):
 
 results = {
 	1: result(codigo='recibido', mensaje='exitoso',cambios='exitoifnjndjf'),
-	2: result(codigo='hsdfhehf', mensaje='jdbfjhf',cambios='dfkjjkfnvfgbkjgn'),
+	2: result(codigo='hsdfhehf', mensaje='hola',cambios='dimelohfvbh'),
 }			
 	
 	
