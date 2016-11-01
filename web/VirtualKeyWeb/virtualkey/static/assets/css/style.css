@@ -113,6 +113,14 @@ text-align:center;
 {
 text-transform:uppercase;
 }
+.shym-text-uppercase
+{
+	color:#000000;	
+}
+.name_state
+{
+	color:#757575;
+}
 .shym-text-right
 {
 text-align:right;
@@ -149,7 +157,7 @@ padding-right:auto;
 {
 height:auto;
 min-height:90px;
-background:#000;
+background:#1976D2;
 padding-top:20px;
 }
  .shym-logo
@@ -160,6 +168,11 @@ padding-top:20px;
  left:0px;
  top:0px;
  }
+.shym-logo > img{
+ width:80px;
+ height:90px;
+}
+
  
  .shym-social-icons
  {
@@ -214,13 +227,13 @@ padding-top:20px;
 
 .downloadbtn
 {
-background:#f77c03;
+background:#1976D2;
 color:#fff;
 border:1px solid #fff;
 }
 .downloadbtn:hover
 {
-background:#fc0983;
+background:#757575;
 color:#fff;
 border:1px solid #fff;
 }
@@ -243,7 +256,7 @@ border:1px solid #fff;
  }
  .shym-option
  {
- background:#000;
+ background:#FFFFFF;
  overflow:hidden;
  }
  .shym-option>.container
@@ -750,15 +763,16 @@ height:100%;
 }
 .shym-contact .con-info {
 	margin-top: 50px;
+	color: #1976D2;
 }
 .shym-contact .con-info i {
-	color: #fff;
+	color: #1976D2;
 	font-size: 50px;
 	margin-bottom: 25px;
 }
 .shym-contact .con-info p {
 	font-size: 16px;
-	color: #fff;
+	color:#1976D2;;
 	line-height: 24px;
 }
 .shym-contact .con-info h4 {

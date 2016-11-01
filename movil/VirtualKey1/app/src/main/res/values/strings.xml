@@ -4,24 +4,28 @@
     <string name="lastname">Apellido</string>
     <string name="document">Documento</string>
     <string name="email">Correo</string>
-    <string name="creat_your_password"> Crea tu contraseña</string>
-    <string name="confirm_your_password">Confirma tu contraseña</string>
-    <string name="enter_their_names">ingrese sus nombres</string>
-    <string name="enter_your_surname">ingrese sus apellidos</string>
-    <string name="enter_number_of_your_document">ingrese numero de su documento</string>
-    <string name="enter_your_email">ingresa tu correo</string>
-    <string name="enter_password">ingrese su contraseña</string>
-    <string name="confirm_password">Confirme su contraseña</string>
+    <string name="username">Username</string>
+    <string name="creat_your_password"> Crear contraseña</string>
+    <string name="creat_your_username"> Ingrese username</string>
+    <string name="confirm_your_password">Confirma contraseña</string>
+    <string name="enter_their_names">ingrese nombres</string>
+    <string name="enter_your_surname">ingrese apellidos</string>
+    <string name="enter_number_of_your_document">ingrese numero de documento</string>
+    <string name="enter_your_email">ingresa correo</string>
+    <string name="enter_password">ingrese  contraseña</string>
+    <string name="confirm_password">Confirme  contraseña</string>
     <string name="get_in">  ingresar  </string>
     <string name="Forgot_password"> ¿ Olvidaste tu contraseña ?</string>
     <string name="signin"> Login</string>
-    <string name="signup"> Registro</string>
+    <string name="signup"> Registrar</string>
     <string name="Check_in"> Registrarse</string>
     <string name="correo"> Username:</string>
     <string name="contraseña"> Password:</string>
-    <string name="Reset_your_password"> Restablecer su contraseña </string>
+    <string name="Reset_your_password"> Restablecer  contraseña </string>
     <string name="send"> enviar</string>
-
+    <string name="register_door"> registrar puerta</string>
+    <string name="take_photo">tomar foto</string>
+    <string name="In_the_sena_telecommunications_center_of_industrial_production_the_gateway_Virtual_Key_which_will_be_located_in_the_software_development_environments_was_found.">En el SENA, centro de telecomunicaciones de produccion industrial. Se encontrara la puerta de acceso  Virtual Key,que estara ubicada en los ambientes de desarrollo de software.</string>
 
 
 </resources>

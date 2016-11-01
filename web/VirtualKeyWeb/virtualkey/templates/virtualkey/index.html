@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -31,16 +31,13 @@ Acces Key
 <div class="container">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle togglebutton" data-toggle="collapse" data-target=".navbar-collapse">
-<span class="sr-only">Toggle</span>
+<span class="sr-only">VirtualKey</span>
 <span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-
 
 </button>
 
 
-<a class='shym-logo'> <img src="{% static 'assets/img/logo-shym.png' %}" alt='Shym'/></a>    
+<a class='shym-logo'> <img src="{% static 'assets/img/logovk.png' %}" alt='Shym'/></a>    
 <ul class='shym-social-icons'>
   <p>Virtual Key</p> 
 </ul>
@@ -64,7 +61,9 @@ Acces Key
                 <div class="home-subtitle">THANKS TO OUR ACCES KEY , THIS WAS IN THE PAST.
 .</div>
                 <a href="#" class="btn btn-lg downloadbtn">Download Virtual Key</a>
+                <h1>{{ Name }}</h1>
             </div>
+
 
 
 
@@ -75,26 +74,16 @@ Acces Key
   <section class='shym-option'>
   <div class='container'>
   <div class="row">
+      {% for item in doors %}
+
         <div  class="col-sm-4 shym-option-container">
-          <span data-scroll-reveal="wait 0.25s, then enter top and move 40px over 1s" ><i class="fa fa-camera"></i></span>
-          <h3 class="shym-text-uppercase"> FABRICA</h3>
-          <p>  </p>
-          <a href="#" title="">CLOSED</a>
+         <!-- <span data-scroll-reveal="wait 0.25s, then enter top and move 40px over 1s" ><i class="fa fa-camera"></i></span>-->
+          <img src="{{item.image}}">
+          <h3 class="shym-text-uppercase"> {{item.name}}</h3>
+          <a class="name_state" href="#" title="">{{item.state}} </a>
         </div>
 
-        <div  class="col-sm-4  shym-option-container">
-          <span data-scroll-reveal="wait 0.25s, then enter top and move 40px over 1s" ><i class="fa fa-dashboard"></i></span>
-          <h3 class="shym-text-uppercase">T.B.T.</h3>
-          <p>  </p>
-          <a href="#" title="">OPEN</a>
-        </div>
-
-        <div  class="col-sm-4  shym-option-container">
-          <span data-scroll-reveal="wait 0.25s, then enter top and move 40px over 1s"><i class="fa fa-eye"></i></span>
-          <h3 class="shym-text-uppercase">DESARROLLO DE SOFTWARE</h3>
-          <p>   </p>
-          <a href="#" title="">CLOSED</a>
-        </div>
+    {% endfor %}
       </div>
       <!-- /COLUMNS -->
     </div>
