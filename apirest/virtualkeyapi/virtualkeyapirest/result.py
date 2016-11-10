@@ -19,4 +19,17 @@ results = {
 	2: result(codigo='hsdfhehf', mensaje='hola',cambios='dimelohfvbh'),
 }			
 	
+resultok = {
+	1: result(codigo='ok', mensaje='exitoso',cambios='a'),
+}			
+resultbad = {
+	1: result(codigo='error', mensaje='fallo',cambios='no coinciden los datos con la base de datos'),
+}			
+resultsave = {
+	1: result(codigo='ok', mensaje='registro',cambios='éxitoso'),
+}			
+resultnossave = {
+	1: result(codigo='error', mensaje='fallo',cambios='al hacer el registro'),
+}			
+
 	

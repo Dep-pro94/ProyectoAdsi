@@ -13,16 +13,26 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url, include
+
+from django.conf.urls import  include, url
 from rest_framework import routers
 from virtualkeyapirest import views
+from django.contrib import admin
+from rest_framework.routers import DefaultRouter
+admin.autodiscover()
+
 router = routers.DefaultRouter()
-router.register(r'users', views.UserViewSet)
-router.register(r'groups', views.GroupViewSet)
-router.register(r'doors', views.DoorsViewSet)
-router.register(r'result', views.ResViewSet, base_name='results')
+router.register(r'api/doors', views.DoorsViewSet,base_name='api')
+router.register(r'result', views.ResultViewSet, base_name='results')
+router.register(r'user', views.UsuarioViewSet,base_name='user')
+router.register(r'api/login', views.LoginViewSet,base_name='api')
+router.register(r'api/register', views.saveUserViewSet,base_name='api')
+router.register(r'api/read', views.readDoorsViewSet,base_name='api')
+# router.register(r'AssignPermissions', views.AsignarViewSet,base_name='Asignar')
+
 urlpatterns = [
 url(r'^', include(router.urls)),
-url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+url(r'^admin/', include(admin.site.urls)),
 ]
 
