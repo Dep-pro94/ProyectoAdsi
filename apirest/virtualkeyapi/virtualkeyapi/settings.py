@@ -25,7 +25,7 @@ SECRET_KEY = 'p)s1sah+2y4&yuw^)yh7a@eu%gr!b$xq5f#_greuiqjvfi=lbw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.0.16','localhost','10.73.70.249','10.73.68.215','127.0.0.1']
 
 
 # Application definition
@@ -85,6 +85,15 @@ TEMPLATES = [
 WSGI_APPLICATION = 'virtualkeyapi.wsgi.application'
 
 
+# EMAIL_USE_TLS = True
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'virtualkeysena@gmail.com'
+# EMAIL_HOST_PASSWORD = 'v1rtu4lk3y'
+# DEFAULT_FROM_EMAIL = 'virtualkeysena@gmail.com'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
@@ -118,9 +127,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-co'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Bogota'
 
 USE_I18N = True
 

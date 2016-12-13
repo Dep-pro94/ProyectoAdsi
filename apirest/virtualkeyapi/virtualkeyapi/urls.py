@@ -22,12 +22,24 @@ from rest_framework.routers import DefaultRouter
 admin.autodiscover()
 
 router = routers.DefaultRouter()
-router.register(r'api/doors', views.DoorsViewSet,base_name='api')
+router.register(r'api/doors', views.DoorsViewSet,base_name='api/doors')
 router.register(r'result', views.ResultViewSet, base_name='results')
-router.register(r'user', views.UsuarioViewSet,base_name='user')
-router.register(r'api/login', views.LoginViewSet,base_name='api')
-router.register(r'api/register', views.saveUserViewSet,base_name='api')
-router.register(r'api/read', views.readDoorsViewSet,base_name='api')
+router.register(r'api/login', views.LoginViewSet,base_name='api/login')
+router.register(r'api/register', views.saveUserViewSet,base_name='api/register')
+router.register(r'api/read', views.readDoorsViewSet,base_name='api/read')
+router.register(r'api/doorPost', views.doorPostViewSet,base_name='api/doorPost')
+router.register(r'api/changeValue', views.doorChangeValue,base_name='api/changeValue')
+router.register(r'api/doorSave', views.doorSave,base_name='api/doorSave')
+router.register(r'api/readUser', views.readUserViewSet,base_name='api/readUser')
+router.register(r'api/readDoorUp', views.readAssingViewSet,base_name='api/readDoorUp')
+router.register(r'api/readRol', views.readRolViewSet,base_name='api/readRol')
+# router.register(r'api/validateEmail', views.validateEmailViewSet,base_name='api/validateEmail')
+router.register(r'api/updatePass', views.updatePassViewSet,base_name='api/updatePass')
+router.register(r'api/getUser', views.getUserViewSet,base_name='api/getUser')
+router.register(r'api/readLimit', views.readLimitViewSet,base_name='api/readLimit')
+
+
+# router.register(r'api/updateUser', views.updateUserViewSet,base_name='api')
 # router.register(r'AssignPermissions', views.AsignarViewSet,base_name='Asignar')
 
 urlpatterns = [
